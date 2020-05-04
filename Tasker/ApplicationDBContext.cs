@@ -12,7 +12,6 @@ namespace Tasker
 
         public ApplicationDbContext(DbContextOptions options) : base(options)
         {
-
         }
     }
 }
