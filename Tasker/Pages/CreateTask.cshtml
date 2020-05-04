@@ -7,6 +7,8 @@
 
 <h1>New Task</h1>
 
+<div asp-validation-summary="All"></div>
+
 <form method="post" asp-page="CreateTask">
     <label asp-for="NewTask.Title">Title</label>
     <input type="text" asp-for="NewTask.Title" />
