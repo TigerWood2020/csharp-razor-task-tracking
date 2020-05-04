@@ -12,5 +12,5 @@ The solution branch includes the completed application.  When you run the applic
 
 - Create tasks in a database
 - See validation errors for invalid data
-- View the task data in a table on the home page  
+- View the task data in a table on the home page
 - Navigate between the home and create pages
