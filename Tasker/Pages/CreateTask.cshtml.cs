@@ -12,6 +12,13 @@ namespace Tasker.Pages
         [BindProperty]
         public Task NewTask { get; set; }
 
+        private ApplicationDBContext _context;
+
+        public CreateTaskModel(ApplicationDBContext context)
+        {
+            _context = context;
+        }
+
         public void OnGet()
         {
 
@@ -19,6 +26,8 @@ namespace Tasker.Pages
 
         public IActionResult OnPost()
         {
+            _context.Tasks.Add(NewTask);
+            _context.SaveChanges();
             return RedirectToPage("Index");
         }
     }
