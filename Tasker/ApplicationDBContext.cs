@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace Tasker
 {
-    public class ApplicationDBContext : DbContext
+    public class ApplicationDbContext : DbContext
     {
         public DbSet<Task> Tasks { get; set; }
 
-        public ApplicationDBContext(DbContextOptions options) : base(options)
+        public ApplicationDbContext(DbContextOptions options) : base(options)
         {
 
         }
